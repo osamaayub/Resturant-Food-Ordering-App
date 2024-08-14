@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Jimmy's Diner</h1>
+                <p>The best Burgers and Pizzas in Town</p>
+            </header>
+            <main>
+                <section id="items"></section>
+                <section id="order-list"></section>
+                <section id="order-complete"></section>
+            </main>
+            <div class="modal" id="modal">
+                <h3 class="modal-title">Enter card details</h3>
+                <div class="modal-content">
+                    <form id="form">
+                        <input id="user-name" name="name" type="text" placeholder="Enter your name" required>
+                        <input id="credit-card" name="credit-card" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" 
+                        autocomplete="cc-number" maxlength="14" placeholder="Enter your card number" required>
+                        <input id="cvv" name="cvc" type="tel" maxlength="3" placeholder="Enter CVC" required>
+                        <input id="pay-btn" type="submit" value="Pay">
+                    </form>
+                </div>
+            </div>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
